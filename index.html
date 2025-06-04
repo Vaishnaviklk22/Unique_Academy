@@ -36,10 +36,10 @@
             /* text-align: center;   */
         }
         .bottom-footer{
-            border-top: 1px solid #a2a2a2;
+            border-top: 1px solid #091fc45e;
             margin-top: 10px;
             padding-top: 10px;
-            color: #9f9d9d;
+            color: #091fc45e;
             text-align: center;
         }
         .footer-nav{
@@ -81,6 +81,7 @@
         .card_head{
           color: rgb(0, 0, 195) ;
         }
+
         .card-title{
           color: rgb(255, 255, 255) ;
         }
@@ -94,11 +95,16 @@
           color: rgb(0, 0, 0);
         }
         .why-choose-card:hover {
-           border: 20px blue;
+           background-color: rgb(53, 198, 255);
+           color: white;
+
         }
-        .card-title{
+        .WhyChooseCard-title{
           color: rgb(0, 0, 195);
         }
+        .WhyChooseCard-title:hover{
+          color: aliceblue;
+        }        
        .btn{
         background-color: rgb(0, 0, 195);
         color: #ffffff;
@@ -109,12 +115,15 @@
         font-size: large;
        }
        .circle-image{
-       border-radius: 100%;
+        border-radius: 100%;
        width: 90px;
        }
        .circle-image:hover {
   background-color: rgb(53, 198, 255);
 }
+       /* .img-fluid{
+        padding: 100px;
+       } */
       </style>
   </head>
   <body>
@@ -285,7 +294,7 @@
         <div class="col-md-2">
             <div class="card why-choose-card">
              <div class="card-body">
-                 <h5 class="card-title">Expert <br> Faculty</h5>
+                 <h5 class="WhyChooseCard-title">Expert <br> Faculty</h5>
                  <p>Learn from experienced educators and subject specialists with a deep understanding of the exam pattern and syllabus.</p>
              </div>
            </div>
@@ -294,7 +303,7 @@
          <div class="col-md-2">
             <div class="card why-choose-card">
              <div class="card-body">
-                 <h5 class="card-title">Structured Courses</h5>
+                 <h5 class="WhyChooseCard-title">Structured Courses</h5>
                  <p> Foundation, Prelims, Mains, and Interview guidance — all under one roof.</p>
              </div>
            </div>
@@ -303,7 +312,7 @@
          <div class="col-md-2">
             <div class="card why-choose-card">
              <div class="card-body">
-                 <h5 class="card-title">Regular Test Series</h5>
+                 <h5 class="WhyChooseCard-title">Regular Test Series</h5>
                  <p>Rigorous practice through topic-wise tests, full-length mocks, and evaluation.</p>
              </div>
            </div>
@@ -312,7 +321,7 @@
          <div class="col-md-2">
             <div class="card why-choose-card">
              <div class="card-body">
-                 <h5 class="card-title">Updated Study Material</h5>
+                 <h5 class="WhyChooseCard-title">Updated Study Material</h5>
                  <p>Well-researched, exam-focused notes and current affairs coverage.</p>
              </div>
            </div>
@@ -321,7 +330,7 @@
          <div class="col-md-2">
             <div class="card why-choose-card">
              <div class="card-body">
-                 <h5 class="card-title">Interactive Learning</h5>
+                 <h5 class="WhyChooseCard-title">Interactive Learning</h5>
                  <p>Group discussions, personality development sessions, and doubt-solving support.</p>
              </div>
            </div>
@@ -330,7 +339,7 @@
          <div class="col-md-2">
             <div class="card why-choose-card">
              <div class="card-body">
-                 <h5 class="card-title">Result-Driven Approach</h5>
+                 <h5 class="WhyChooseCard-title">Result-Driven Approach</h5>
                  <p>Proven track record of student selections in various civil services.</p>
              </div>
            </div>
@@ -347,7 +356,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="card w-100" >
-                <img src="assets/course1.jpg" alt="">
+                <img src="assets/course1.jpg" alt="" loading="lazy" >
                 <div class="card-body">
                     <h4 class="card_head">CGPSC PRE Foundation Batch</h4>
                     <p>Join the CGPSC PRE Foundation Batch starting by Unique Academy, Raipur.
@@ -359,7 +368,7 @@
 
         <div class="col-md-3">
             <div class="card w-100">
-                <img src="assets/course2.jpg" alt="">
+                <img src="assets/course2.jpg" alt="" loading="lazy" >
                 <div class="card-body">
                     <h4 class="card_head">CGPSC Undergraduate Batch</h4>
                     <p>Enroll in the CGPSC Undergraduate Batch at Unique Academy, Raipur.
@@ -371,7 +380,7 @@
 
         <div class="col-md-3">
             <div class="card w-100">
-                <img src="assets/course3.0.jpg" alt="">
+                <img src="assets/course3.0.jpg" alt="" loading="lazy" >
                 <div class="card-body">
                     <h4 class="card_head">ADEO Batch</h4><br>
                     <p>Join the ADEO (Sahayak Vikas Vistar Adhikari) Batch at Unique Academy.
@@ -383,7 +392,7 @@
 
         <div class="col-md-3">   
             <div class="card w-100">
-                <img src="assets/course4.jpg" alt="">
+                <img src="assets/course4.jpg" alt="" loading="lazy" >
                 <div class="card-body">
                     <h4 class="card_head">CGPSC Pre Foundation Batch</h4>
                     <p>Admissions open at Unique Academy for CGPSC Pre Foundation Batch, 
@@ -397,11 +406,11 @@
  <br><br>
 
 <!-- left image right text -->
- <div class="container-fluid" style="background-color: aliceblue;"><br><br>
+ <!-- <div class="container-fluid" style="background-color: aliceblue;"><br><br>
     <div class="row">
         <h2>About Us</h2><br>
         <div class="col-md-6">
-            <img src="assets/Logo.png" alt="" style="width: 500px;">
+            <img src="assets/Logo.png" alt="" loading="lazy" style="width: 500px;">
         </div>
             <div class="col-md-6">
                 <h2 class="head" style="padding-right: 50px;">Unique Academy</h2>
@@ -414,13 +423,34 @@
         </div><br><br>
     </div>
  </div>
- <br><br>
+ <br><br> -->
 
-  <div class="container-fluid" style="padding: 50px;">
+ <div class="container-fluid py-5" style="background-color: aliceblue;">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <h2>About Us</h2>
+
+      <div class="col-lg-6 text-center">
+        <img src="assets/Logo.png" alt="Unique Academy Logo" class="img-fluid" style="max-width: 500px;" loading="lazy">
+      </div>
+
+      <div class="col-lg-6">
+        <h2 class="mb-3">Unique Academy</h2>
+        <p>
+          Unique Academy is a premier institute based in Raipur, Chhattisgarh, dedicated to preparing students for UPSC, CGPSC, and other state-level and central civil services examinations. With a strong foundation in academic excellence, result-oriented teaching, and personalized mentorship, we have emerged as a trusted name among civil services aspirants across the state.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- <div class="container-fluid" style="padding: 50px;">
     <div class="row">
         <h2></h2><br>
         <div class="col-md-6">
-            <img src="assets/img.png" alt="" style="width: 400px; margin-left: 100px;">
+            <img src="assets/img.png" alt="" loading="lazy" style="width: 400px; margin-left: 100px;">
         </div>
             <div class="col-md-6">
                 <h2 class="head">Comprehensive Programs to Excel in Civil Services Examination</h2>
@@ -437,30 +467,61 @@
         </div>
     </div>
  </div>
- <br><br>
+ <br><br> -->
+
+ <div class="container-fluid py-5" style="background-color: fbfaf9;">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      
+      <div class="col-lg-6 text-center">
+        <img src="assets/img.png" alt="Civil Services Program" class="img-fluid rounded" loading="lazy" style="max-width: 400px;">
+      </div>
+
+      <div class="col-lg-6">
+        <h2 class="mb-3">Comprehensive Programs to Excel in Civil Services Examination</h2>
+        <p class="mb-4">Explore our diverse range of UPSC courses designed to provide structured learning, personalized mentorship, and rigorous test preparation for every stage of your UPSC journey.</p>
+        
+        <ul class="mb-4 ps-3">
+          <li>Undergraduate</li>
+          <li>Foundation</li>
+          <li>Mentoring program</li>
+          <li>Test series</li>
+          <li>Interview guidance program</li>
+        </ul>
+
+        <a href="#" class="btn btn-primary">Explore Courses</a>
+      </div>
+      
+    </div>
+  </div>
+</div> <br><br>
+
 
  <!-- right image left text -->
- <div class="container-fluid" style="background-color: aliceblue;"><br><br>
-    <h2 style="text-align: center;">Vision & Mission</h2><br>
-    <div class="row">
-        <div class="col-md-6" style="padding-left: 100px; padding-right: 50px;">
-                    <h2 class="head">Our Vision</h2>
-                    <p>To empower and guide the youth of Chhattisgarh and beyond towards successful
-                     careers in public service, by providing high-quality and affordable education
-                     tailored for competitive examinations.</p>
-                     <br>
-                     <h2 class="head">Our Mission</h2>                     
-                     <p><i class="fa fa-bullseye" aria-hidden="true" style="color: blue;"></i>To deliver comprehensive and updated coaching for UPSC, CGPSC, VYAPAM, SSC, and other competitive.</p>
-                     <p><i class="fa fa-bullseye" aria-hidden="true" style="color: blue;"></i>To cultivate analytical thinking, clarity of concepts, and answer writing skills essential for civil services success.</p>
-                     <p><i class="fa fa-bullseye" aria-hidden="true" style="color: blue;"></i>To provide accessible education through both online and offline modes to cater to diverse learning needs.</p>
-                </div>
-                    <div class="col-md-6">
-                    <img src="assets/our_results.jpg" alt="" style="width: 600px;">
-                </div>
-        </div><br><br>
+ <div class="container-fluid py-5" style="background-color: aliceblue;">
+  <div class="container">
+    <h2 class="text-center mb-5">Vision & Mission</h2>
+    <div class="row align-items-center gy-4">
+
+      <div class="col-lg-6 px-4">
+        <h3 class="mb-3">Our Vision</h3>
+        <p>To empower and guide the youth of Chhattisgarh and beyond towards successful
+          careers in public service, by providing high-quality and affordable education
+          tailored for competitive examinations.</p>
+
+        <h3 class="mt-4 mb-3">Our Mission</h3>
+        <p><i class="fa fa-bullseye text-primary me-2"></i>To deliver comprehensive and updated coaching for UPSC, CGPSC, VYAPAM, SSC, and other competitive exams.</p>
+        <p><i class="fa fa-bullseye text-primary me-2"></i>To cultivate analytical thinking, clarity of concepts, and answer writing skills essential for civil services success.</p>
+        <p><i class="fa fa-bullseye text-primary me-2"></i>To provide accessible education through both online and offline modes to cater to diverse learning needs.</p>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img src="assets/our_results.jpg" alt="Our Results" class="img-fluid rounded" loading="lazy" style="max-width: 100%;">
+      </div>
     </div>
- </div>
- <br><br>
+  </div>
+</div><br><br>
+
 
 <!-- multiple images -->
 <h5 style="text-align: center; color: rgb(0, 0, 195);">Our Top Results</h5>
@@ -468,124 +529,134 @@
  <div class="container-fluid" style="text-align: center;">
     <div class="row">
         <div class="col-md-4">
-            <img src="assets/result1.jpg" alt="" style="width: 250px;">
+            <img src="assets/result1.jpg" alt="" loading="lazy" style="width: 250px;">
         </div>
                 <div class="col-md-4">
-            <img src="assets/result2.jpg" alt="" style="width: 250px;">
+            <img src="assets/result2.jpg" alt="" loading="lazy" style="width: 250px;">
         </div>
         <div class="col-md-4">
-            <img src="assets/result3.jpg" alt="" style="width: 250px;">
+            <img src="assets/result3.jpg" alt="" loading="lazy" style="width: 250px;">
         </div>
     </div>
  </div><br><br>
 
  <!-- testimonial -->
-<div class="container-fluid" style="text-align: center; background-color: aliceblue;"><br><br>
-  <h5 style="color:rgb(0, 0, 195);">Testimonial</h5>
-  <h2>Read inspiring success stories from our top students</h2><br>
-  <div class="row">
-    <div class="owl-carousel second carousel text-align">
-    <div class="col-md-4">
-      <img class="image-fluid" src="assets/InShot_20250602_225025420.png" alt="" style="width: 250px;">
-      <h5>XYZ</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam blanditiis libero, officiis voluptates unde expedita corporis velit amet cumque ex.</p>
-    </div>
-    <div class="col-md-4">
-      <img class="image-fluid" src="assets/InShot_20250602_223151618.png" alt="" style="width: 250px;">
-      <h5>XYZ</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam blanditiis libero, officiis voluptates unde expedita corporis velit amet cumque ex.</p>
-    </div>
-    <div class="col-md-4">
-      <img class="image-fluid" src="assets/InShot_20250602_223300961.png" alt="" style="width: 250px;">
-      <h5>XYZ</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam blanditiis libero, officiis voluptates unde expedita corporis velit amet cumque ex.</p>
-    </div>
-    <div class="col-md-4">
-      <img class="image-fluid" src="assets/InShot_20250602_223533691.png" alt="" style="width: 250px;">
-      <h5>XYZ</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam blanditiis libero, officiis voluptates unde expedita corporis velit amet cumque ex.</p>
-    </div>
-    <div class="col-md-4">
-      <img class="image-fluid" src="assets/InShot_20250602_225114388.png" alt="" style="width: 250px;">
-      <h5>XYZ</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam blanditiis libero, officiis voluptates unde expedita corporis velit amet cumque ex.</p>
-    </div>
+<div class="container-fluid py-5" style="text-align: center; background-color: aliceblue;">
+  <div class="container">
+    <h5 style="color: rgb(0, 0, 195);">Testimonial</h5>
+    <h2 class="mb-4">Read inspiring success stories from our top students</h2>
+
+    <div class="owl-carousel owl-theme second-carousel">
+      <div class="item px-3">
+        <div class="card border-0 shadow-sm p-3 h-100">
+          <img class="img-fluid mx-auto mb-3" src="assets/InShot_20250602_223151618.png" alt="Student 1" loading="lazy" style="max-width: 250px;">
+          <h5>XYZ</h5>
+          <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam blanditiis libero, officiis voluptates unde expedita corporis velit amet cumque ex.</p>
+        </div>
+      </div>
+
+      <div class="item px-3">
+        <div class="card border-0 shadow-sm p-3 h-100">
+          <img class="img-fluid mx-auto mb-3" src="assets/InShot_20250602_223300961.png" alt="Student 2" loading="lazy" style="max-width: 250px;">
+          <h5>XYZ</h5>
+          <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam blanditiis libero, officiis voluptates unde expedita corporis velit amet cumque ex.</p>
+        </div>
+      </div>
+
+      <div class="item px-3">
+        <div class="card border-0 shadow-sm p-3 h-100">
+          <img class="img-fluid mx-auto mb-3" src="assets/InShot_20250602_223533691.png" alt="Student 3" loading="lazy" style="max-width: 250px;">
+          <h5>XYZ</h5>
+          <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam blanditiis libero, officiis voluptates unde expedita corporis velit amet cumque ex.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div><br>
 
-<!-- centre images -->
-<div class="container-fluid" style="text-align: center;">
-  <h5 style="color: rgb(0, 0, 195);;">Gallery</h5>
-  <h2>Unique Academy Center</h2><br>
-  <div class="row">
-    <div class="col-md-6">
-      <img src="assets/center1.jpg" alt="" style="width: 500px; border-radius: 20px;">
+<!-- Centre -->
+<div class="container-fluid text-center" style="background-color: #f9f9ff;">
+  <h5 style="color: rgb(0, 0, 195);">Gallery</h5>
+  <h2 class="mb-4">Unique Academy Center</h2>
+  
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-sm-12">
+      <img src="assets/center1.jpg" alt="Center Image 1" loading="lazy" class="img-fluid" style="padding: 50px;">
     </div>
-     <div class="col-md-6">
-      <img src="assets/center2.jpg" alt="" style="width: 500px; border-radius: 20px;">
+    <div class="col-md-6 col-sm-12">
+      <img src="assets/center2.jpg" alt="Center Image 2" loading="lazy" class="img-fluid" style="padding: 50px;">
     </div>
   </div>
-</div><br><br>
+</div>
+
+
+<!-- iframe -->
+<div style="text-align: center; background-color: aliceblue;"><br>
+<h2>Our Location</h2><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.8490251946605!2d81.59836057503756!3d21.23783458046427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dfa2032ceb19%3A0x97b36215e7dd4773!2sUNIQUE%20ACADEMY%20RAIPUR!5e0!3m2!1sen!2sin!4v1749051297520!5m2!1sen!2sin"
+ width="500" height="350" 
+ style="border:0;" 
+ allowfullscreen="" 
+ loading="lazy" 
+ referrerpolicy="no-referrer-when-downgrade">
+</iframe><br><br>
+</div>
 
  <!-- footer -->
-    <footer class="site-footer">
-      <div class="row" >
-        <div class="col-md-3" style="padding-right: 150px;">
-          <img src="assets/Logo.png" alt="" style="width: 300px;">
-        </div>
-            <div class="col-md-3">
-              <div>
-                <ul class="footer-nav" style="text-align: justify;">
-                  <h5>Explore</h5>
-                    <i class="fa fa-home" aria-hidden="true"></i>
-                    <li><a href="" style="text-decoration: none; color: rgb(0, 0, 195);">Home</a></li><br>
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                    <li><a href="" style="text-decoration: none; color: rgb(0, 0, 195);">About</a></li><br>
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <li><a href="" style="text-decoration: none; color: rgb(0, 0, 195);">Contact</a></li><br>
-                    <i class="fa fa-picture-o" aria-hidden="true"></i>
-                    <li><a href="" style="text-decoration: none; color: rgb(0, 0, 195);">Gallary</a></li><br>
-                    <i class="fa fa-book" aria-hidden="true"></i>
-                    <li><a href="" style="text-decoration: none; color: rgb(0, 0, 195);">Study Material</a></li><br>
-                </ul>
-              </div>
-            </div>
+    <footer class="site-footer bg-light py-5">
+  <div class="container">
+    <div class="row gy-4">
 
-            <div class="col-md-3">
-              <div>
-                <ul class="footer-nav" style="text-align: justify;">
-                  <h5>Courses</h5>
-                    <i class="fa fa-bookmark" aria-hidden="true"></i>
-                    <li><a href="" style="text-decoration: none; color: rgb(0, 0, 195);">CGPSC</a></li><br>
-                    <i class="fa fa-bookmark" aria-hidden="true"></i>
-                    <li><a href="" style="text-decoration: none; color: rgb(0, 0, 195);">UPSC</a></li><br>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <h5>Address</h5>
-                <address style="color: rgb(0, 0, 195);">
-                  <i class="fa fa-map-marker" aria-hidden="true" style="color: #000000;"></i>
-                    Fourth Floor,GTC Tower,<br>
-                    New Rajendra Nagar,<br>
-                    Raipur
-                </address>
-            </div>
-            <div style="text-align: center; color: rgb(0, 0, 0);">
-              <p>Connect with us on our social media platforms: </p>
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-              <i class="fa fa-facebook-official" aria-hidden="true"></i>
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div class="bottom-footer">
-                copyright information 2019
-        </div>
+      <div class="col-lg-3 col-md-6 text-center text-md-start">
+        <img src="assets/Logo.png" alt="Logo" class="img-fluid" style="max-width: 200px;">
       </div>
-    </footer>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>Explore</h5>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-home me-2"></i><a href="#" class="text-decoration-none text-primary">Home</a></li>
+          <li><i class="fa fa-users me-2"></i><a href="#" class="text-decoration-none text-primary">About</a></li>
+          <li><i class="fa fa-phone me-2"></i><a href="#" class="text-decoration-none text-primary">Contact</a></li>
+          <li><i class="fa fa-picture-o me-2"></i><a href="#" class="text-decoration-none text-primary">Gallery</a></li>
+          <li><i class="fa fa-book me-2"></i><a href="#" class="text-decoration-none text-primary">Study Material</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>Courses</h5>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-bookmark me-2"></i><a href="#" class="text-decoration-none text-primary">CGPSC</a></li>
+          <li><i class="fa fa-bookmark me-2"></i><a href="#" class="text-decoration-none text-primary">UPSC</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>Address</h5>
+        <address class="text-primary">
+          <i class="fa fa-map-marker text-dark me-2"></i>
+          Gol Chowk, beside DIRGHAYU HOSPITAL,<br>
+          Rohnipuram, DDU Nagar, Amanaka,<br>
+          Raipur, Chhattisgarh 492001
+        </address>
+      </div>
+    </div>
+
+    <!-- Social Media -->
+    <div class="text-center mt-4 text-primary">
+      <p>Connect with us on our social media platforms:</p>
+      <i class="fa fa-instagram fa-2x mx-2"></i>
+      <i class="fa fa-youtube-play fa-2x mx-2"></i>
+      <i class="fa fa-facebook-official fa-2x mx-2"></i>
+      <i class="fa fa-linkedin-square fa-2x mx-2"></i>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="text-center mt-3 small text-secondary">
+      © 2019 Unique Academy. All rights reserved.
+    </div>
+  </div>
+</footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
@@ -593,22 +664,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script>
-      $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-          loop:true,
-          autoplay:true,
-          autoplaySpeed:500,
-          margin:10,
-          nav: true,
-          responsive:{
-            0: { items:1 },
-            600: { items:2 },
-            1000: { items:3 },
-          }
-        });
-      });
-    </script>
+<script>
+  $(document).ready(function(){
+    $('.second-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 1 },
+        768: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+  });
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
