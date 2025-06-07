@@ -102,9 +102,20 @@
         .WhyChooseCard-title{
           color: rgb(0, 0, 195);
         }
-        .WhyChooseCard-title:hover{
-          color: aliceblue;
-        }        
+
+       .why-choose-card {
+        transition: transform .2s ease, box-shadow .2s ease;
+        border: none;                 
+        border-radius: 1rem;                                      
+       }
+       .why-choose-card:hover {
+        transform: translateY(-4px);  
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); 
+       }
+       @media (min-width: 992px) {
+       .why-choose-card .card-body { min-height: 220px; }
+       }
+
        .btn{
         background-color: rgb(0, 0, 195);
         color: #ffffff;
@@ -119,8 +130,10 @@
        width: 90px;
        }
        .circle-image:hover {
-  background-color: rgb(53, 198, 255);
-}
+       background-color: rgb(53, 198, 255);
+       transform: translateY(-4px);
+       box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+       }
        /* .img-fluid{
         padding: 100px;
        } */
@@ -286,68 +299,83 @@
       </div>
     </div>
   </div><br><br>
-<!-- why choose us -->
-<div class="container-fluid">
-  <h2>Why Choose us?</h2><br>
- <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2">
-            <div class="card why-choose-card">
-             <div class="card-body">
-                 <h5 class="WhyChooseCard-title">Expert <br> Faculty</h5>
-                 <p>Learn from experienced educators and subject specialists with a deep understanding of the exam pattern and syllabus.</p>
-             </div>
-           </div>
-         </div>
 
-         <div class="col-md-2">
-            <div class="card why-choose-card">
-             <div class="card-body">
-                 <h5 class="WhyChooseCard-title">Structured Courses</h5>
-                 <p> Foundation, Prelims, Mains, and Interview guidance — all under one roof.</p>
-             </div>
-           </div>
-         </div>
+<!-- WHY CHOOSE US -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Why Choose Us?</h2>
 
-         <div class="col-md-2">
-            <div class="card why-choose-card">
-             <div class="card-body">
-                 <h5 class="WhyChooseCard-title">Regular Test Series</h5>
-                 <p>Rigorous practice through topic-wise tests, full-length mocks, and evaluation.</p>
-             </div>
-           </div>
-         </div>
+    <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6">
 
-         <div class="col-md-2">
-            <div class="card why-choose-card">
-             <div class="card-body">
-                 <h5 class="WhyChooseCard-title">Updated Study Material</h5>
-                 <p>Well-researched, exam-focused notes and current affairs coverage.</p>
-             </div>
-           </div>
-         </div>
+      <div class="col">
+        <div class="card h-100 text-center why-choose-card">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: rgb(0, 0, 195);">Expert<br>Faculty</h5>
+            <p class="card-text small">
+              Learn from experienced educators and subject specialists with a deep understanding of the exam pattern and syllabus.
+            </p>
+          </div>
+        </div>
+      </div>
 
-         <div class="col-md-2">
-            <div class="card why-choose-card">
-             <div class="card-body">
-                 <h5 class="WhyChooseCard-title">Interactive Learning</h5>
-                 <p>Group discussions, personality development sessions, and doubt-solving support.</p>
-             </div>
-           </div>
-         </div>
+      <div class="col">
+        <div class="card h-100 text-center why-choose-card">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: rgb(0, 0, 195);">Structured Courses</h5>
+            <p class="card-text small">
+              Foundation, Prelims, Mains, and Interview guidance — all under one roof.
+            </p>
+          </div>
+        </div>
+      </div>
 
-         <div class="col-md-2">
-            <div class="card why-choose-card">
-             <div class="card-body">
-                 <h5 class="WhyChooseCard-title">Result-Driven Approach</h5>
-                 <p>Proven track record of student selections in various civil services.</p>
-             </div>
-           </div>
-         </div>
+      <div class="col">
+        <div class="card h-100 text-center why-choose-card">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: rgb(0, 0, 195);">Regular Test Series</h5>
+            <p class="card-text small">
+              Rigorous practice through topic-wise tests, full-length mocks, and evaluation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-center why-choose-card">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: rgb(0, 0, 195);">Updated Study Material</h5>
+            <p class="card-text small">
+              Well-researched, exam-focused notes and current-affairs coverage.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-center why-choose-card">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: rgb(0, 0, 195);">Interactive Learning</h5>
+            <p class="card-text small">
+              Group discussions, personality-development sessions, and doubt-solving support.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-center why-choose-card">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: rgb(0, 0, 195);">Result-Driven Approach</h5>
+            <p class="card-text small">
+              Proven track record of student selections in various civil services.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
-</div>
-</div>
-<br><br>
+  </div>
+</section>
 
 
 <!-- cards -->
@@ -482,11 +510,11 @@
         <p class="mb-4">Explore our diverse range of UPSC courses designed to provide structured learning, personalized mentorship, and rigorous test preparation for every stage of your UPSC journey.</p>
         
         <ul class="mb-4 ps-3">
-          <li>Undergraduate</li>
-          <li>Foundation</li>
-          <li>Mentoring program</li>
-          <li>Test series</li>
-          <li>Interview guidance program</li>
+          <li style="list-style: none; text-align: left;">Undergraduate</li>
+          <li style="list-style: none; text-align: left;">Foundation</li>
+          <li style="list-style: none; text-align: left;">Mentoring program</li>
+          <li style="list-style: none; text-align: left;">Test series</li>
+          <li style="list-style: none; text-align: left;">Interview guidance program</li>
         </ul>
 
         <a href="#" class="btn btn-primary">Explore Courses</a>
@@ -494,7 +522,7 @@
       
     </div>
   </div>
-</div> <br><br>
+</div> <br>
 
 
  <!-- right image left text -->
@@ -510,9 +538,9 @@
           tailored for competitive examinations.</p>
 
         <h3 class="mt-4 mb-3">Our Mission</h3>
-        <p><i class="fa fa-bullseye text-primary me-2"></i>To deliver comprehensive and updated coaching for UPSC, CGPSC, VYAPAM, SSC, and other competitive exams.</p>
-        <p><i class="fa fa-bullseye text-primary me-2"></i>To cultivate analytical thinking, clarity of concepts, and answer writing skills essential for civil services success.</p>
-        <p><i class="fa fa-bullseye text-primary me-2"></i>To provide accessible education through both online and offline modes to cater to diverse learning needs.</p>
+        <p style="text-align: left;"><i class="fa fa-bullseye text-primary me-2"></i>To deliver comprehensive and updated coaching for UPSC, CGPSC, VYAPAM, SSC, and other competitive exams.</p>
+        <p style="text-align: left;"><i class="fa fa-bullseye text-primary me-2"></i>To cultivate analytical thinking, clarity of concepts, and answer writing skills essential for civil services success.</p>
+        <p style="text-align: left;"><i class="fa fa-bullseye text-primary me-2"></i>To provide accessible education through both online and offline modes to cater to diverse learning needs.</p>
       </div>
 
       <div class="col-lg-6 text-center">
